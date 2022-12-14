@@ -149,19 +149,19 @@ void editPatientInformation(struct patient *a, int *size)
 }
 void addNewPatient(struct patient *a, int *size)
 {
-    printf("Enter FIO: ");
+    printf("Enter Full Name: ");
     scanf("%s %s %s", &(a+*size)->surname, &(a+*size)->name, &(a+*size)->patronymic);
-    printf("Enter DateofBirthday: ");
+    printf("Enter Date of Birth: ");
     scanf("%d", &((a+*size)->dateOfBirth));
-    printf("Enter Pol: ");
+    printf("Enter Sex: ");
     scanf("%s", &((a+*size)->sex));
-    printf("Enter Sity: ");
+    printf("Enter Location: ");
     scanf("%s", &((a+*size)->location));
-    printf("Enter Number: ");
+    printf("Enter Contact Information: ");
     scanf("%d", &((a+*size)->contactInformation));
-     printf("Enter Diagnos: ");
+     printf("Enter Diagnosis: ");
     scanf("%s", &((a+*size)->diagnosis));
-    printf("New patients was added\n");
+    printf("New patient was added\n");
     system("pause");
 }
 void outputUsers(struct users *a1, int *size)
